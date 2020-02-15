@@ -1,2 +1,2 @@
 docker build --network host --build-arg ROSDISTRO=melodic -t linorobot .
-docker run --privileged --net=host -it linorobot
+docker run -v /dev:/dev --privileged --net=host -it linorobot
